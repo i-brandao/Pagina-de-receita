@@ -3,6 +3,19 @@ body{
   background-size: cover;
 }
 
+h1, h2, h3{
+  font-family: 'Fraunces', serif;
+  color: #E63963;
+}
+
+p, ul, li {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFF7F8;
+}
+
+
 #page {
   box-sizing: border-box;
   max-width: 800px;
