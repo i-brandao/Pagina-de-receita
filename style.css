@@ -44,6 +44,16 @@ p, ul, li {
   padding: 24px;
   background-color: #FF8DA1;
   border-radius: 24px;
+  position: relative;
+}
+
+.colagem-sobreposta {
+  position: absolute; 
+  z-index: 10;
+  top: -30px;
+  right: -20px;
+  width: 200px;
+  pointer-events: none;
 }
 
 img {
