@@ -1,11 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   background-image: url(Assets/backgroundcolored.jpg);
   background-size: cover;
 }
 
+h1 {
+  line-height: 140%;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
 h1, h2, h3{
   font-family: 'Fraunces', serif;
   color: #E63963;
+  margin-bottom: 4px;
+  line-height: 150%;
+}
+
+ul {
+  padding-left: 24;
+  list-style-type: none;
 }
 
 p, ul, li {
@@ -29,4 +50,12 @@ img {
   border-radius: 16px;
   width: 100%;
   height: auto;
+}
+
+main{
+  padding: 24px;
+}
+
+#about p + p {
+  margin-top: 12px;
 }
