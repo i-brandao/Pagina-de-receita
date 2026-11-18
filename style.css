@@ -1,79 +1,135 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-  background-image: url(Assets/backgroundcolored.jpg);
-  background-size: cover;
+body {
+    background-image: url(Assets/backgroundcolored.jpg);
+    background-size: cover;
 }
 
 h1 {
-  line-height: 140%;
-  font-size: 40px;
+    line-height: 140%;
+    font-size: 40px;
 }
 
 h2 {
-  font-size: 24px;
+    font-size: 24px;
 }
 
-h1, h2, h3{
-  font-family: 'Fraunces', serif;
-  color: #E63963;
-  margin-bottom: 4px;
-  line-height: 150%;
-}
-
-ul {
-  padding-left: 24;
-  list-style-type: none;
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    color: #E63963;
+    margin-bottom: 4px;
+    line-height: 150%;
 }
 
 p, ul, li {
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #FFF7F8;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFF7F8;
 }
 
+/* Estrutura principal */
 
 #page {
-  box-sizing: border-box;
-  max-width: 800px;
-  margin: 48px auto;
-  padding: 24px;
-  background-color: #FF8DA1;
-  border-radius: 24px;
-  position: relative;
+    max-width: 800px;
+    margin: 48px auto;
+    padding: 24px;
+    background-color: #FF8DA1;
+    border-radius: 24px;
+    position: relative;
 }
+
+main {
+    padding: 24px;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Colagem sobreposta */
 
 .colagem-sobreposta {
-  position: absolute; 
-  z-index: 10;
-  top: -30px;
-  right: -20px;
-  width: 200px;
-  pointer-events: none;
+    position: absolute;
+    z-index: 10;
+    top: -30px;
+    right: -20px;
+    width: 200px;
+    pointer-events: none;
 }
 
-img {
-  border-radius: 16px;
-  width: 100%;
-  height: auto;
+/* Seção de apresentação */
+
+#About p + p {
+    margin-top: 12px;
 }
 
-main{
-  padding: 24px;
+/* Ingredientes */
+
+#Ingredients ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 12px 0 24px;
 }
 
-#about p + p {
-  margin-top: 12px;
+#Ingredients li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
+
+/* Imagens circulares */
+
+.ingredient-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Rodapé */
 
 footer {
-  color: #FFF7F8;
-  text-align: center;
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-  padding-bottom: 48px;
+    color: #FFF7F8;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    padding-bottom: 48px;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    #page {
+        margin: 24px 12px;
+        padding: 12px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .colagem-sobreposta {
+        width: 120px;
+        right: -5px;
+        top: -20px;
+    }
+
+    .ingredient-icon {
+        width: 42px;
+        height: 42px;
+    }
 }
